@@ -136,7 +136,6 @@ header, footer {
 
 #line {
     height: 1px;
-    width: 80%;
     margin: 0 auto;
     background-color: rgba(52, 52, 52, .2);;
     position: relative;
