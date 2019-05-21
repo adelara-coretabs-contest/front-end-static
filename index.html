@@ -4,44 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adelara Chef-food</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Delice</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav id="nav" class="flex">
             <div id="logo">
-
+                <img src="img/chef.png" alt="">
             </div>
-            <h1>
-                
-            </h1>
-            <div id="hamburger-menu">
-
+            <h1 id="adelara-title">AdeLara - <span>FoodChef</span></h1>
+            <div id="hamburger-menu" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>
-
         <div id="banner">
-
+            <img src="./img/chef-playing.png" alt="">
+            <div id="hangry">
+                <h2>Hangry?!</h2>
+                <p>Cool, we're here to <span>serve</span> you!</p>
+                <!-- <a href="#menu" id="scroll-down">&#8601;</div> -->
+                <div id="scroll-down"></div>
+            </div>
         </div>
+        <div id="line"></div>
     </header>
+    <main id="menu">
 
-    <main>
-        <section id="" class="container-item">
+        <div class="container-item" id="1">
             <div class="item">
                 <figure>
-    
+                    <img class="" src="https://images.pexels.com/photos/1069449/pexels-photo-1069449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Pizza</h4>
                 </figure>
-                <figcaption>
-    
+                <figcaption class="">
+                    <!-- <div class="" id="{{pizza-descr}}">yamyam</div> -->
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
                 </figcaption>
             </div>
-        </section>
-
+        </div>
+    
+        <div class="container-item" id="2">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/19642/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Hamburger</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+    
+        <div class="container-item" id="3">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/47725/hamburger-food-meal-tasty-47725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">French Burger</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+    
+        <div class="container-item" id="4">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Veg Sandwich</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+        
+        <div class="container-item" id="1">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/1069450/pexels-photo-1069450.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Simple Pizza</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+        
+        <div class="container-item" id="2">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/1603898/pexels-photo-1603898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Sandwich</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+        
+        <div class="container-item" id="3">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">Leg Chicken</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
+        
+        <div class="container-item" id="4">
+            <div class="item">
+                <figure>
+                    <img class="" src="https://images.pexels.com/photos/991967/pexels-photo-991967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="drinks">
+                    <h4 class="title" id="pizza">fried meat</h4>
+                </figure>
+                <figcaption class="">
+                    <div class="price" id="{{meal.price}}">$5</div>
+                    <div class="details-button">Details</div>
+                </figcaption>
+            </div>
+        </div>
     </main>
-
+    <div class="testim">
+        
+    </div>
     <footer>
-
+        
     </footer>
 
     <script src="js/app.js"></script>
