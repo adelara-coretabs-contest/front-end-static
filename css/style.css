@@ -127,10 +127,11 @@ header, footer {
 #scroll-down {
     width: 25px;
     height: 25px;
-    border-bottom: 1px solid #599d7b;
-    border-left: 1px solid #599d7b;
+    border-bottom: 2px solid #599d7b;
+    border-left: 2px solid #599d7b;
     position: relative;
     margin: 55px auto;
+    cursor: pointer;
     transform: rotate(-45deg);
 }
 
