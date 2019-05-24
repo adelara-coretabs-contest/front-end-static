@@ -13,8 +13,8 @@ hamburger.addEventListener('click', () => {
 });
 
 let downToMeals = document.querySelector('#scroll-down');
-downToMeals.addEventListener('click', ()=> {
+let scrollToMeals = ()=> {
     let meals = document.querySelector('#main');
     downToMeals.scrollIntoView(meals);
     console.log('meals');
-})
+}
