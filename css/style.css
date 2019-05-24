@@ -43,8 +43,6 @@ body {
     text-align: center;
 }
 
-
-
 header, footer {
     width: 100%;
     background-color: #fff;
@@ -205,16 +203,16 @@ header, footer {
     margin: 0;
 }
 
-#details figure img{
+#meal-pic {
     width: 400px;
 }
 
 #meal-name {
     position: absolute;
-    top: 0;
+    right: 0;
     font-size: 2em;
-    color: #fff;
-    margin: 0;
+    color: #488064;
+    margin: 16px 26px;
 }
 
 #meal-price {
@@ -231,18 +229,47 @@ header, footer {
     border-radius: 50px;
 }
 
+.center {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+#cloud {
+    width: auto;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    /* transform: rotate(180deg); */
+}
+
 #details figcaption{
     width: 100%;
     background-color: rgba(172, 212, 165, 0.7);
     margin-left: 5px;
 }
 
-.shadow
-{
+#ingredients {
+    margin: 0 20px;
+    overflow-y: scroll;
+}
+
+#ingredients ul {
+    list-style: none;
+    border-radius: 28px;
+    font-size: .8em;
+}
+
+#ingredients h5 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.shadow {
   position: relative;
 }
-.shadow:before, .shadow:after
-{
+
+.shadow:before, .shadow:after {
   z-index: -1;
   position: absolute;
   content: "";
@@ -255,20 +282,22 @@ header, footer {
   box-shadow: 0 35px 20px #777;
   transform: rotate(-8deg);
 }
-.shadow:after
-{
+.shadow:after {
   transform: rotate(8deg);
   right: 10px;
   left: auto;
 }
 
-.order-button {
+#order-button {
+    position: relative;
+    right: 10px;
+    float: right;
+    bottom: 10px;
     color: #333;
-    border: #333 1px solid;
-}
-
-#ingredients {
-    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 4px 7px #333;
+    margin: 20px;
+    cursor: pointer;
 }
 
 .container-item {
@@ -321,14 +350,15 @@ header, footer {
 
 .details-button {
     border: #fff 1px solid;
+    margin: 64px auto;
 }
 
-.details-button, .order-button {
+.details-button, #order-button {
     width: 90px;
-    margin: 64px auto;
     padding: 2px 0;
     border-radius: 5px;
     font-size: .7em;
+    text-align: center;
     
 }
 
