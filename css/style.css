@@ -7,6 +7,10 @@ body {
     font-size: 1.5em;
 }
 
+a {
+    text-decoration: none;
+}
+
 #loader {
     position: fixed;
     top: 0;
@@ -196,7 +200,7 @@ header, footer {
     width: 800px;
     height: 340px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #c4e1c0;
 }
 
 #details figure {
@@ -481,6 +485,34 @@ img {
 
 .item:hover figcaption div {
     display: block;
+}
+
+
+#success-chef {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.message {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.message #title {
+    color: #488064;
+}
+
+#success-container .submit-button {
+    left: 12px;
+    width: 200px;
+    padding: 5px;
+    color: #488064;
 }
 
 .testim {
