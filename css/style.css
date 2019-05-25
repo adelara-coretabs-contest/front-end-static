@@ -193,8 +193,8 @@ header, footer {
 
 .meal-details {
     margin: 100px auto; 
-    width: 80%;
-    height: auto;
+    width: 800px;
+    height: 340px;
     flex-direction: column;
     background-color: #fff;
 }
@@ -243,6 +243,10 @@ header, footer {
     /* transform: rotate(180deg); */
 }
 
+#details {
+    height: 100%;
+}
+
 #details figcaption{
     width: 100%;
     background-color: rgba(172, 212, 165, 0.7);
@@ -252,6 +256,10 @@ header, footer {
 #ingredients {
     margin: 0 20px;
     overflow-y: scroll;
+}
+
+#ingredients::-webkit-scrollbar {
+    width: 0;
 }
 
 #ingredients ul {
@@ -288,8 +296,8 @@ header, footer {
   left: auto;
 }
 
-#order-button {
-    position: relative;
+.submit-button {
+    position: absolute;
     right: 10px;
     float: right;
     bottom: 10px;
@@ -298,6 +306,62 @@ header, footer {
     box-shadow: 0px 4px 7px #333;
     margin: 20px;
     cursor: pointer;
+}
+
+.form {
+    position: relative;
+    bottom: 80px;
+}
+
+.form form {
+    margin: 26px;
+}
+
+.form h4 {
+    text-align: center;
+    margin: 38px 0 20px 0;
+}
+
+
+
+input, textarea {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Handlee', cursive;
+    border: #488064 1px solid !important;
+    transition: ease-in-out, background-color .35s ease-in-out;
+}
+
+textarea {
+    height: 62px;
+}
+  
+input:focus, textarea:focus {
+    background-color: #c4e1c0;
+    outline: 3px solid #599d7b;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    padding: 12px 20px;
+    margin: 4px auto;
+    font-size: .7em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+input[type="submit"] {
+    position: relative;
+    float: left;
+    bottom: 10px;
 }
 
 .container-item {
@@ -353,7 +417,7 @@ header, footer {
     margin: 64px auto;
 }
 
-.details-button, #order-button {
+.details-button, .submit-button {
     width: 90px;
     padding: 2px 0;
     border-radius: 5px;
@@ -452,6 +516,11 @@ img {
 
 .absolute {
     position: absolute;
+}
+
+.hidden {
+ display: none;
+
 }
 
 #footer {
